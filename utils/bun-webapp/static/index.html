@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PH eReferral — FSH Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>PH eReferral — Profiles Dashboard</h1>
+    <p class="lead">Stratified view of profiles and instances from FSH and generated outputs — tailored for clinicians and technical users.</p>
+  </header>
+
+  <main>
+    <section id="summary" class="card">
+      <div class="summary-grid">
+        <div>
+          <h2 id="total">Total Items: —</h2>
+          <p id="critical">Critical: —</p>
+        </div>
+        <div id="counts"></div>
+      </div>
+    </section>
+
+    <section id="instances" class="card">
+      <h2>Instances</h2>
+      <input id="filter" placeholder="Filter by name or type" />
+      <div id="tablewrap"></div>
+    </section>
+
+    <section id="detail" class="card">
+      <h2>Detail</h2>
+      <pre id="detailpane">Select an instance to view details</pre>
+    </section>
+
+    <section id="relationships" class="card">
+      <h2>Relationships</h2>
+      <div id="relationwrap">Loading relationships…</div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "ph-ereferral-bun-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "bun server.js"
+  },
+  "description": "Lightweight Bun webapp to visualize FSH and generated profiles for PH eReferral",
+  "author": "",
+  "license": "MIT"
+}
