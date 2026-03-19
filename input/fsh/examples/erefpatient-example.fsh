@@ -17,8 +17,8 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 // Patient name (REF-21)
 * name.use = #official
 * name.family = "Dela Cruz"
-* name.given[0] = "Juan"
-* name.given[1] = "Dela Fuente"
+* name.given[+] = "Juan"
+* name.extension[middleName].valueString = "Dela Fuente"
 
 // Administrative gender (REF-22)
 * gender = #male
@@ -42,9 +42,6 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 * address.use = #home
 * address.type = #physical
 * address.line[0] = "123 Mabini Street"
-* address.line[1] = "Barangay Malinis"
-* address.city = "Quezon City"
-* address.district = "NCR"
 * address.postalCode = "1100"
 * address.country = "PH"
 
