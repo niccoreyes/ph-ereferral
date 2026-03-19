@@ -7,7 +7,6 @@ Id: ereferral-patient
 Title: "ERefPatient"
 Description: "Patient profile for the Philippine eReferral system. Extends PHCorePatient with additional elements specific to referral workflows, including PWD (Person with Disability) registration information. This profile supports the patient demographic requirements defined in the eReferral TDG (Technical Development Group) mapping, elements REF-21 through REF-30."
 
-* ^url = "http://doh.gov.ph/fhir/ereferral/StructureDefinition/ereferral-patient"
 * ^status = #draft
 * ^experimental = true
 * ^purpose = "To standardize patient demographic information for Philippine healthcare referrals, ensuring interoperability between referring and receiving facilities."
@@ -68,4 +67,4 @@ Expression: "contact.exists() implies contact.all(name.exists() or telecom.exist
 Invariant: ereferral-patient-2
 Description: "If PWD registration is provided with an ID, expiration date should also be provided."
 Severity: #warning
-Expression: "extension('http://doh.gov.ph/fhir/ereferral/StructureDefinition/pwd-disability').extension('pwdId').exists() implies extension('http://doh.gov.ph/fhir/ereferral/StructureDefinition/pwd-disability').extension('idExpirationDate').exists()"
+Expression: "extension('urn://example.com/ph-ereferral/fhir/StructureDefinition/ereferral-pwd-disability').extension('pwdId').exists() implies extension('urn://example.com/ph-ereferral/fhir/StructureDefinition/ereferral-pwd-disability').extension('idExpirationDate').exists()"

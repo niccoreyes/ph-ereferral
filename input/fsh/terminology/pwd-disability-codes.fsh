@@ -5,8 +5,8 @@ CodeSystem: PWDDisabilityTypeCS
 Id: pwd-disability-type-cs
 Title: "PWD Disability Type Code System"
 Description: "Code system for types of disability as defined by the Philippine government for PWD registration."
-* ^url = "http://doh.gov.ph/fhir/ereferral/CodeSystem/pwd-disability-type"
 * ^status = #draft
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -24,6 +24,6 @@ ValueSet: PWDDisabilityTypeVS
 Id: pwd-disability-type-vs
 Title: "PWD Disability Type Value Set"
 Description: "Value set for types of disability as defined by the Philippine government for PWD registration."
-* ^url = "http://doh.gov.ph/fhir/ereferral/ValueSet/pwd-disability-type"
 * ^status = #draft
+* ^experimental = true
 * include codes from system PWDDisabilityTypeCS

@@ -55,8 +55,7 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 * address.extension[province].valueCoding = $PSGC#0402100000 "Cavite"
 
 // Next of Kin / Accompanied By (REF-29)
-* contact[0].relationship[0] = $v2-0203#C "Emergency Contact"
-* contact[0].relationship[1] = http://terminology.hl7.org/CodeSystem/v2-0131#F "Father"
+* contact[0].relationship[0] = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "Father"
 * contact[0].name.use = #official
 * contact[0].name.family = "Dela Cruz"
 * contact[0].name.given[0] = "Roberto"
@@ -66,7 +65,7 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 
 // Extensions inherited from PHCorePatient
 * extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#PH "Philippines"
-* extension[religion].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation#1025 "Roman Catholic"
+* extension[religion].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation#1025 "Jehovah's Witnesses"
 * extension[race].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-Race#2036-2 "Filipino"
 
 // PWD Disability Registration (REF-30) - eReferral-specific
@@ -76,4 +75,4 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 
 // Text narrative
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Juan Dela Cruz is a male patient born on 15 June 1985, residing in Barangay Malinis, Quezon City, NCR, Philippines. Contact: +639171234567. PWD ID: PWD-NCR-QC-123456 (expires 2027-03-15). Emergency contact: Roberto Dela Cruz (Father).</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Juan Dela Cruz is a male patient born on 15 June 1985, residing in Barangay Malinis, Quezon City, NCR, Philippines. Contact: +639171234567. PWD ID: PWD-NCR-QC-123456 (expires 2027-03-15). Father contact: Roberto Dela Cruz.</div>"

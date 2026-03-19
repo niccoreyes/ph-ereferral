@@ -4,8 +4,8 @@ Extension: PWDDisabilityExtension
 Id: ereferral-pwd-disability
 Title: "PWD Disability Registration"
 Description: "Extension for Person With Disability (PWD) registration information in the Philippine eReferral system. Captures PWD ID number, disability type, and ID expiration date."
-* ^url = "http://doh.gov.ph/fhir/ereferral/StructureDefinition/pwd-disability"
 * ^status = #draft
+* ^experimental = true
 * ^context.type = #element
 * ^context.expression = "Patient"
 
