@@ -1,5 +1,6 @@
 Instance: ExamplePatient
 InstanceOf: Patient
+Usage: #example
 Description: "Example patient instance for IG validation"
 * name.given = "Juan"
 * name.family = "Dela Cruz"
