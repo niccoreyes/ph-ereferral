@@ -2,13 +2,22 @@ Instance: ExampleERefPractitioner
 InstanceOf: PHCorePractitioner
 Usage: #example
 Title: "Example Referring Practitioner"
-Description: "Example referring practitioner"
+Description: "Example referring practitioner for eReferral workflow. Demonstrates REF-1 (Name of Referring Practitioner)."
+
 * identifier.system = "urn:oid:2.16.840.1.113883.2.9.4.3.3"
-* identifier.value = "MD-98765"
+* identifier.value = "PRAC-12345"
+* active = true
 * name.use = #official
 * name.family = "Santos"
 * name.given[0] = "Maria"
-* name.given[+] = "Clara"
+* name.given[+] = "Cruz"
 * name.prefix = "Dr."
+* name.text = "Dr. Maria Cruz Santos"
+* telecom[0].system = #phone
+* telecom[0].value = "+63 2 8123 4567"
+* telecom[0].use = #work
+* telecom[1].system = #email
+* telecom[1].value = "mcsantos@hospital.ph"
+* telecom[1].use = #work
 * gender = #female
 * qualification.code = $sct#1062931000119102 "Doctor of Medicine"

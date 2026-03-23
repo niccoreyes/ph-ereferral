@@ -1,8 +1,9 @@
 Instance: ExampleERefPractitionerRole
-InstanceOf: PHCorePractitionerRole
+InstanceOf: ERefPractitionerRole
 Usage: #example
 Title: "Example Referring Practitioner Role"
-Description: "Example referring practitioner with role and organization"
+Description: "Example referring practitioner with role and organization for eReferral workflow. Demonstrates the ERefPractitionerRole profile usage for REF-1 (Name of Referring Practitioner), REF-2 (Practitioner Role), and REF-5/REF-6/REF-7/REF-8 (Initiating Facility data)."
+
 * identifier.system = "urn:oid:2.16.840.1.113883.2.9.4.3.3"
 * identifier.value = "MD-98765"
 * active = true
