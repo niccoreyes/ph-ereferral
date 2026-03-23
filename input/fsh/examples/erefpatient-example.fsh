@@ -18,7 +18,7 @@ Description: "Example patient instance demonstrating the ERefPatient profile wit
 * name.use = #official
 * name.family = "Dela Cruz"
 * name.given[+] = "Juan"
-* name.extension[middleName].valueString = "Dela Fuente"
+* name.given[+] = "Dela Fuente"
 
 // Administrative gender (REF-22)
 * gender = #male
