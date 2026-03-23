@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.ph.ereferral
+id: example.fhir.ph.ereferral
 canonical: urn://example.com/ph-ereferral/fhir
 name: PHeReferralImplementationGuide
 title: PH eReferral Implementation Guide
@@ -77,8 +77,6 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidelines:
-    WHO SMART L1 Basis: who-smart-l1.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
