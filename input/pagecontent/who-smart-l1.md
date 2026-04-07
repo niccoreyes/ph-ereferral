@@ -37,10 +37,10 @@ The PH eReferral IG is being developed in a context shaped by Philippine univers
 
 At a minimum, the current L1 basis for this IG includes:
 
-1. **Republic Act No. 11223 (Universal Health Care Act)**, which establishes the national universal health care policy direction and frames integrated and comprehensive health-system delivery.
-2. **DOH Administrative Order No. 2020-0019**, *Guidelines on the Service Delivery Design of Health Care Provider Networks*, which describes the HCPN context in which referral coordination and service delivery operate.
-3. **DOH Administrative Order No. 2020-0024**, *Primary Care Policy Framework and Sectoral Strategies*, which clarifies the primary care role as navigator, coordinator, and continuing point of contact, and emphasizes continuity and coordination of care.
-4. **DOH Administrative Order No. 2020-0021**, *Guidelines on Integration of the Local Health Systems into Province-wide and City-wide Health Systems (P/CWHS)*, which situates HCPNs and PCPNs within integrated local health-system delivery and explicitly includes two-way referrals, patient navigation, records access, and digital technologies for health.
+1. [**Republic Act No. 11223** (Universal Health Care Act)](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86448), which establishes the national universal health care policy direction and frames integrated and comprehensive health-system delivery.
+2. [**DOH Administrative Order No. 2020-0019**](https://drive.google.com/file/d/1Uri9Iov3YPw3rc3AidV6dXjv8y_W7ydr/view), *Guidelines on the Service Delivery Design of Health Care Provider Networks*, which describes the HCPN context in which referral coordination and service delivery operate.
+3. [**DOH Administrative Order No. 2020-0024**](https://law.upd.edu.ph/wp-content/uploads/2020/06/DOH-AO-No-2020-0024.pdf), *Primary Care Policy Framework and Sectoral Strategies*, which clarifies the primary care role as navigator, coordinator, and continuing point of contact, and emphasizes continuity and coordination of care.
+4. [**DOH Administrative Order No. 2020-0021**](https://law.upd.edu.ph/wp-content/uploads/2020/05/DOH-AO-No_2020-0021.pdf), *Guidelines on Integration of the Local Health Systems into Province-wide and City-wide Health Systems (P/CWHS)*, which situates HCPNs and PCPNs within integrated local health-system delivery and explicitly includes two-way referrals, patient navigation, records access, and digital technologies for health.
 
 Together, these sources provide the narrative basis for treating eReferral as part of coordinated, standards-aligned, network-based care delivery rather than as a standalone messaging feature.
 
@@ -48,12 +48,12 @@ Together, these sources provide the narrative basis for treating eReferral as pa
 
 The current source set indicates the following narrative basis for PH eReferral:
 
-- **RA 11223 / UHC policy direction**: health-system design should support integrated, comprehensive, and coordinated care rather than fragmented service delivery.
-- **AO 2020-0019 / HCPN design**: HCPNs are expected to deliver continuous health care from primary to tertiary levels through safe, efficient, and coordinated mechanisms.
-- **AO 2020-0019 / referrals**: the order explicitly calls for a functional referral system, localized referral protocols, patient navigation and coordination, standardized communication processes, a uniform referral form, and a back-referral form with follow-up and home instructions.
-- **AO 2020-0019 / interoperability**: HCPNs are expected to have a patient record management system with interoperable electronic medical records capable of real-time information sharing across member facilities.
-- **AO 2020-0024 / primary care policy**: primary care is positioned as the navigator, coordinator, and initial and continuing point of contact, with continuity of care across health conditions and levels of care.
-- **AO 2020-0021 / integrated local systems**: PCPNs are described as the foundation of HCPNs and are responsible for serving as initial contact and navigator, coordinating patients to facilitate two-way referrals, and supporting access across levels of care, including the use of digital technologies for health.
+- [**RA 11223 / UHC policy direction**](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86448): health-system design should support integrated, comprehensive, and coordinated care rather than fragmented service delivery.
+- [**AO 2020-0019 / HCPN design**](https://drive.google.com/file/d/1Uri9Iov3YPw3rc3AidV6dXjv8y_W7ydr/view): HCPNs are expected to deliver continuous health care from primary to tertiary levels through safe, efficient, and coordinated mechanisms.
+- [**AO 2020-0019 / referrals**](https://drive.google.com/file/d/1Uri9Iov3YPw3rc3AidV6dXjv8y_W7ydr/view): the order explicitly calls for a functional referral system, localized referral protocols, patient navigation and coordination, standardized communication processes, a uniform referral form, and a back-referral form with follow-up and home instructions.
+- [**AO 2020-0019 / interoperability**](https://drive.google.com/file/d/1Uri9Iov3YPw3rc3AidV6dXjv8y_W7ydr/view): HCPNs are expected to have a patient record management system with interoperable electronic medical records capable of real-time information sharing across member facilities.
+- [**AO 2020-0024 / primary care policy**](https://law.upd.edu.ph/wp-content/uploads/2020/06/DOH-AO-No-2020-0024.pdf): primary care is positioned as the navigator, coordinator, and initial and continuing point of contact, with continuity of care across health conditions and levels of care.
+- [**AO 2020-0021 / integrated local systems**](https://law.upd.edu.ph/wp-content/uploads/2020/05/DOH-AO-No_2020-0021.pdf): PCPNs are described as the foundation of HCPNs and are responsible for serving as initial contact and navigator, coordinating patients to facilitate two-way referrals, and supporting access across levels of care, including the use of digital technologies for health.
 
 These points are the main reason this implementation guide needs a dedicated L1 basis page. They establish that referral interoperability in this project is rooted in coordinated service delivery, networked care, patient navigation, and continuity of care, not only in technical message exchange.
 
@@ -84,11 +84,32 @@ Instead, this page provides the narrative basis that later work can refine into 
 
 The PH eReferral IG should treat this L1 page as the narrative foundation for downstream work.
 
-| SMART level | Role in this project | Expected output in PH eReferral work |
-|---|---|---|
-| **L1 Narrative guidance** | Describes the policy, service-delivery, and guideline basis for the use case | This page and linked source references |
-| **L2 DAK / structured requirements** | Converts narrative guidance into operational and structured requirements | Business processes, actors, data needs, rules, and other structured artefacts |
-| **L3 FHIR IG / technical implementation** | Expresses computable and testable implementation content | FHIR profiles, examples, terminology bindings, interactions, and validation-ready guidance |
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; margin: 1em 0;">
+  <thead>
+    <tr style="background-color: #f5f5f5;">
+      <th style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">SMART level</th>
+      <th style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">Role in this project</th>
+      <th style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">Expected output in PH eReferral work</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">L1 Narrative guidance</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">Describes the policy, service-delivery, and guideline basis for the use case</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">This page and linked source references</td>
+    </tr>
+    <tr style="background-color: #fafafa;">
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">L2 DAK / structured requirements</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">Converts narrative guidance into operational and structured requirements</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">Business processes, actors, data needs, rules, and other structured artefacts</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc; font-weight: bold;">L3 FHIR IG / technical implementation</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">Expresses computable and testable implementation content</td>
+      <td style="text-align: left; padding: 12px 15px; border: 1px solid #ccc;">FHIR profiles, examples, terminology bindings, interactions, and validation-ready guidance</td>
+    </tr>
+  </tbody>
+</table>
 
 This separation matters. The PH eReferral IG should not collapse L1, L2, and L3 into one page or one type of artefact. Each layer serves a different purpose and should remain traceable to the layer above it.
 
