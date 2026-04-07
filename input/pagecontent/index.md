@@ -1,7 +1,7 @@
 # Philippine eReferral Implementation Guide (PH eReferral IG)
 
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" width="100%" viewBox="0 0 1400 200" preserveAspectRatio="xMidYMin meet">
-  <title id="title">DRAFT â€“ PH eReferral IG Disclaimer</title>
+  <title id="title">DRAFT – PH eReferral IG Disclaimer</title>
   <desc id="desc">This guide is a draft and under active development. Not for public consumption.</desc>
 
   <defs>
@@ -60,10 +60,10 @@ For the narrative and policy foundation of this implementation guide, see [WHO S
 
 A use case Implementation Guide builds upon foundational and core standards to address a specific clinical or administrative workflow. Unlike base or core IGs that establish broad interoperability foundations, a use case IG:
 
-- **Targets a specific workflow** â€” in this case, the patient referral process between healthcare facilities
-- **Profiles core resources for the use case** â€” constrains and extends PH Core profiles to meet referral-specific requirements
-- **Defines actors and interactions** â€” identifies systems, users, and the exchanges between them
-- **Specifies business rules** â€” documents the rules governing referral lifecycle, status transitions, and required data elements
+- **Targets a specific workflow** — in this case, the patient referral process between healthcare facilities
+- **Profiles core resources for the use case** — constrains and extends PH Core profiles to meet referral-specific requirements
+- **Defines actors and interactions** — identifies systems, users, and the exchanges between them
+- **Specifies business rules** — documents the rules governing referral lifecycle, status transitions, and required data elements
 
 PH eReferral demonstrates how FHIR resources can be applied to solve a real-world interoperability challenge in the Philippine healthcare system.
 
@@ -94,13 +94,13 @@ PH eReferral fits into the Philippine FHIR IG architecture as a **use case layer
 
 | Layer | IG | Purpose |
 |-------|-----|---------|
-| Core | [PH Core IG](https://github.com/UP-Manila-SILab/ph-core) | **Base profiles** â€“ Foundational rules, common extensions, and national identifiers (Patient, Practitioner, Organization, Encounter, etc.) |
-| **Use Case** | **PH eReferral IG** | **Referral-specific workflows and interactions** â€“ HCPN referral messaging built on PH Core |
+| Core | [PH Core IG](https://github.com/UP-Manila-SILab/ph-core) | **Base profiles** – Foundational rules, common extensions, and national identifiers (Patient, Practitioner, Organization, Encounter, etc.) |
+| **Use Case** | **PH eReferral IG** | **Referral-specific workflows and interactions** – HCPN referral messaging built on PH Core |
 | Program | Program-specific IGs | Tailored implementations for specific health programs or facilities |
 
 PH Core provides the **parent/base profiles** used by this IG. PH eReferral:
 
-- Uses PH Core as its foundation â€“ inheriting constraints from PH Core profiles (Patient, Practitioner, Organization, Encounter, etc.)
+- Uses PH Core as its foundation – inheriting constraints from PH Core profiles (Patient, Practitioner, Organization, Encounter, etc.)
 - Defines referral-specific profiles (ServiceRequest, Task, etc.) for interoperability
 - Specifies the referral workflow actors and their interactions
 - Documents the complete referral lifecycle from creation to fulfillment
