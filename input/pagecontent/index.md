@@ -92,11 +92,32 @@ It does not define general clinical workflows outside the referral context.
 
 PH eReferral fits into the Philippine FHIR IG architecture as a **use case layer** implementation guide that builds upon foundational profiles:
 
-| Layer | IG | Purpose |
-|-------|-----|---------|
-| Core | [PH Core IG](https://github.com/UP-Manila-SILab/ph-core) | **Base profiles** – Foundational rules, common extensions, and national identifiers (Patient, Practitioner, Organization, Encounter, etc.) |
-| **Use Case** | **PH eReferral IG** | **Referral-specific workflows and interactions** – HCPN referral messaging built on PH Core |
-| Program | Program-specific IGs | Tailored implementations for specific health programs or facilities |
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; margin: 1em 0;">
+  <thead>
+    <tr style="background-color: #f5f5f5;">
+      <th style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">Layer</th>
+      <th style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">IG</th>
+      <th style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">Core</td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;"><a href="https://github.com/UP-Manila-SILab/ph-core">PH Core IG</a></td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;"><strong>Base profiles</strong> – Foundational rules, common extensions, and national identifiers (Patient, Practitioner, Organization, Encounter, etc.)</td>
+    </tr>
+    <tr style="background-color: #fafafa;">
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">Use Case</td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">PH eReferral IG</td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;"><strong>Referral-specific workflows and interactions</strong> – HCPN referral messaging built on PH Core</td>
+    </tr>
+    <tr>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">Program</td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">Program-specific IGs</td>
+      <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">Tailored implementations for specific health programs or facilities</td>
+    </tr>
+  </tbody>
+</table>
 
 PH Core provides the **parent/base profiles** used by this IG. PH eReferral:
 
