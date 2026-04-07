@@ -94,7 +94,6 @@ The PH eReferral IG should treat this L1 page as the narrative foundation for do
   </thead>
   <tbody>
     <tr>
-    <tr>
       <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc; font-weight: bold;">L1 Narrative guidance</td>
       <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">Describes the policy, service-delivery, and guideline basis for the use case</td>
       <td style="text-align: left; padding: 6px 10px; border: 1px solid #ccc;">This page and linked source references</td>
