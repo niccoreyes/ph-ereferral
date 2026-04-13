@@ -13,7 +13,7 @@ Description: "Profile on PractitionerRole for the Philippines eReferral specific
 // FHIR Path: ServiceRequest.requester (sending side) or ServiceRequest.performer (receiving side)
 // Description: References the Practitioner resource containing the name and demographics of the referring practitioner (REF-1) or care navigator (REF-9)
 * practitioner 1..1 MS
-* practitioner only Reference(Practitioner)
+* practitioner only Reference(PHCorePractitioner)
 * practitioner ^short = "The referring or receiving practitioner"
 * practitioner ^definition = "Reference to the Practitioner resource representing the individual practitioner (referring practitioner on the sending side per REF-1, or care navigator on the receiving side per REF-9)."
 
@@ -29,7 +29,7 @@ Description: "Profile on PractitionerRole for the Philippines eReferral specific
 //   - REF-10: Receiving Facility Name (Organization.name)
 //   - REF-11: Receiving Facility NHFR Code (Organization.identifier[NHFR])
 * organization 1..1 MS
-* organization only Reference(Organization)
+* organization only Reference(PHCoreOrganization)
 * organization ^short = "The healthcare facility where the practitioner works"
 * organization ^definition = "Reference to the Organization resource representing the healthcare facility (initiating facility on the sending side per REF-5/REF-6/REF-7/REF-8, or receiving facility on the receiving side per REF-10/REF-11)."
 
@@ -42,15 +42,4 @@ Description: "Profile on PractitionerRole for the Philippines eReferral specific
 * code ^definition = "The designation or role of the practitioner (e.g., Midwife, District Nurse, District Medical Officer). Required per REF-2 from Synchronous TDG FHIR Mapping."
 * code ^comment = "This element captures the professional role of the practitioner within the eReferral context per REF-2. Common values include midwife, district nurse, and district medical officer."
 
-// Remove non-essential elements not referenced in TDG sheet
-// * specialty 0..0
-// * active 0..0
-// * period 0..0
-// * telecom 0..0
-// * location 0..0
-// * healthcareService 0..0
-// * availableTime 0..0
-// * notAvailable 0..0
-// * availabilityExceptions 0..0
-// * endpoint 0..0
-// * identifier 0..0
+
