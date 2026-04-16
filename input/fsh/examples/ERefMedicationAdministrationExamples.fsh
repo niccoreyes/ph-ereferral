@@ -34,32 +34,9 @@ Description: "Example chronic medication administration (antihypertensive) demon
 * note.text = "Patient's regular morning antihypertensive medication given before referral. Patient has been compliant with daily dosing."
 
 // === SUPPORTING RESOURCES (Self-Contained) ===
-
-Instance: ExampleERefPatient
-InstanceOf: PHCorePatient
-Usage: #example
-Title: "Example eReferral Patient"
-Description: "Example patient for MedicationAdministration demonstration."
-
-* identifier.system = "urn:oid:2.16.840.1.113883.2.9.4.3.2"
-* identifier.value = "PH-123456789"
-* name.family = "Dela Cruz"
-* name.given[0] = "Juan"
-* gender = #male
-* birthDate = "1965-07-20"
-
-Instance: ExampleERefPractitioner
-InstanceOf: PHCorePractitioner
-Usage: #example
-Title: "Example Referring Practitioner"
-Description: "Example practitioner for MedicationAdministration demonstration."
-
-* identifier.system = "urn:oid:2.16.840.1.113883.2.9.4.3.3"
-* identifier.value = "MD-98765"
-* name.family = "Santos"
-* name.given[0] = "Maria"
-* name.prefix = "Dr."
-* gender = #female
+// Note: ExampleERefPatient and ExampleERefPractitioner are defined in separate files:
+// - input/fsh/examples/ExampleERefPatient.fsh
+// - input/fsh/examples/ExampleERefPractitioner.fsh
 
 Instance: ExampleERefMedicationAntibiotic
 InstanceOf: PHCoreMedication
