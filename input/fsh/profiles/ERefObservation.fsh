@@ -58,4 +58,4 @@ ServiceRequest.reasonReference."
 // Constrained to ERefPatient for eReferral context (not Group, Device, or Location)
 * subject MS
 // * subject ObligationOptional
-* subject only Reference(ERefPatient)
+// * subject only Reference(ERefPatient)
