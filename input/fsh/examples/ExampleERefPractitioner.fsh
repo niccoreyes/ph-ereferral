@@ -11,4 +11,4 @@ Description: "Example referring practitioner"
 * name.given[+] = "Clara"
 * name.prefix = "Dr."
 * gender = #female
-* qualification.code = $sct#1062931000119102 "Doctor of Medicine"
+* qualification.code = $sct#158965000 "Medical practitioner"
