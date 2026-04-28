@@ -58,4 +58,20 @@ ServiceRequest.reasonReference."
 // Constrained to ERefPatient for eReferral context (not Group, Device, or Location)
 * subject MS
 // * subject ObligationOptional
-// * subject only Reference(ERefPatient)
+* subject only Reference(ERefPatient)
+
+// =============================================================================
+// SELF-REFERENCING ELEMENTS - R4 Observation
+// =============================================================================
+// hasMember: For grouping related observations (e.g., vital signs panels,
+// laboratory batteries). In eReferral, panel members should be ERefObservations.
+* hasMember only Reference(ERefObservation)
+  * ^short = "Grouped member observations"
+  * ^definition = "This observation is a group observation that includes the target as a member. For eReferral, all member observations should conform to ERefObservation profile."
+
+// derivedFrom: For observations derived from other observations (e.g.,
+// calculated values like BMI from height/weight, or anion gap from electrolytes).
+// In eReferral, source observations should be ERefObservations.
+* derivedFrom only Reference(ERefObservation or DocumentReference)
+  * ^short = "Source observation for derived values"
+  * ^definition = "The target resource that represents a measurement from which this observation value is derived. For eReferral, source observations should conform to ERefObservation profile."
